@@ -46,8 +46,6 @@ def load_height_csv(country, gender):
     country = country.lower()
     gender = gender.lower()
     height_file = os.path.join(os.path.dirname(__file__), f"{country}_{gender}_Height.csv")
-
-   
     height_df = pd.read_csv(height_file, skiprows=1)    
     return height_df
 
